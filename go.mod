@@ -1,4 +1,4 @@
-module github.com/teonet-go/teofortune-fyne
+module github.com/teonet-go/teofortune-gui
 
 go 1.21.1
 
