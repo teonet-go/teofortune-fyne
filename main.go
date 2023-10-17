@@ -33,7 +33,7 @@ func main() {
 	teo.newGui()
 }
 
-// teofortune contains teonet data and holds methods to start gui, process 
+// teofortune contains teonet data and holds methods to start gui, process
 // teonet connection and teofortune api
 type teofortune struct {
 	addr           string            // Teofortune address
@@ -88,11 +88,11 @@ func (teo *teofortune) newGui() {
 	message := widget.NewLabel(fmsg)
 	w.SetContent(container.NewVBox(
 		label,
-		message,
 		widget.NewButton("Show next", func() {
 			fmsg, _ := teo.fortune()
 			message.SetText(fmsg)
 		}),
+		message,
 	))
 
 	w.Resize(fyne.Size{Width: 600, Height: 600})
